@@ -110,9 +110,7 @@ ul.hr li {
 
 .time {
     padding: 10px 35px 10px 30px;
-    background-image: url(images/time.png);
-    background-repeat: no-repeat;
-    background-position: left center;
+    background: url(images/time.png) no-repeat left center;    
 }
 
 .cart{
