@@ -80,9 +80,20 @@ ul.hr li {
     color: #999999;
     padding: 10px 20px;
     margin-left: 20px;
-    background-color: black;
+    background-color: transparent;
     border-radius: 5px;
     border: 1px solid #999999;
+    cursor: pointer;
+}
+
+.log:hover{
+    background-color:#222222;
+    border: 1px solid #BBBBBB;
+}
+
+.log:active {
+    background-color: initial;
+    border-color: initial;
 }
 
 .header {
@@ -93,16 +104,16 @@ ul.hr li {
 }
 
 .chart, .time, .cart, .bttn_verification_div {
-    display: inline-block;
     font-family: MuseoSansRounded-700-webfont;
-    margin: 15px 7px;
+    margin: 15px 0;
     font-size: 20px;
     color: #858585;
+    float: left;
 }
 
 .chart {
     border-right: 1px solid #cccccc;
-    padding: 10px 35px 10px 30px;
+    padding: 10px 20px 10px 30px;
     background-image: url(images/cart.png);
     background-repeat: no-repeat;
     background-position: left center;
@@ -110,6 +121,7 @@ ul.hr li {
 
 .time {
     padding: 10px 35px 10px 30px;
+    margin-left: 20px;
     background: url(images/time.png) no-repeat left center;    
 }
 
@@ -118,6 +130,11 @@ ul.hr li {
     background-image: url(images/cart.png);
     background-repeat: no-repeat;
     background-position: left center;
+}
+
+.bttn_verification_div {
+    float: right;
+
 }
 
 .bttn_verification {
@@ -189,12 +206,11 @@ ul.hr li {
 }
 
 .buy {
-    width: 100%;
+    background-color: #f3f3f3;
 }
 
 .sumt, .minus, .amount, .plus {
     float: left;
-    background-color: #f3f3f3;
     font-size: 22px;
 }
 
@@ -203,14 +219,12 @@ ul.hr li {
     padding: 10px;
     font-size: 22px;
     float: left;
-    background-color: #f3f3f3;
     padding: 20px 30px;
 }
 
 .minus {
     padding: 10px;
     float: left;
-    background-color: #f3f3f3;
     padding: 9px 30px 10px 30px;;
 }
 
@@ -219,7 +233,7 @@ ul.hr li {
 }
 
 .plus {
-    padding: 9px 126px 10px 30px;
+    padding: 9px 0 10px 30px;
 }
 
 .text {
@@ -305,4 +319,14 @@ ul.hr li {
 .button_div {
     background-color: black;
     border-radius: 5px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.header::after, .heart::after, .buy::after {
+    content: " ";
+    clear: both;
+    display: table;
 }
