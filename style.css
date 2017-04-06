@@ -31,13 +31,14 @@ html {
 
 body {
     font-family: MuseoSansRounded-300-webfont;
+    background-color: #f3f3f3;
 }
 
-.main {
+.header {
     background-color: black;
 }
 
-.main2 {
+.main {
     background-color: black;
     margin-left: auto;
     margin-right: auto;
@@ -96,237 +97,97 @@ ul.hr li {
     border-color: initial;
 }
 
-.header {
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
+.info {
     border-bottom: 1px solid #cccccc;
 }
 
-.chart, .time, .cart, .bttn_verification_div {
-    font-family: MuseoSansRounded-700-webfont;
-    margin: 15px 0;
-    font-size: 20px;
-    color: #858585;
-    float: left;
-}
-
-.chart {
-    border-right: 1px solid #cccccc;
-    padding: 10px 20px 10px 30px;
-    background-image: url(images/cart.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-
-.time {
-    padding: 10px 35px 10px 30px;
-    margin-left: 20px;
-    background: url(images/time.png) no-repeat left center;    
-}
-
-.cart{
-    padding: 10px 15px 10px 30px;
-    background-image: url(images/cart.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-
-.bttn_verification_div {
-    float: right;
-
-}
-
-.bttn_verification {
-    padding: 10px;
-    font-size: 20px;
-    font-family: MuseoSansRounded-700-webfont;
-    background-color: #e88903;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-}
-
-.verify {
-    font-family: MuseoSansRounded-700-webfont;
-    text-align: left;
-    font-size: 16px;
-    background-color: #ceeef2;
-    margin: 20px auto;
-    padding: 20px;    
-    border-radius: 5px;
-    color: #757e7f;
-}
-
-.header, .main2, .verify, .heart {
-    width: 1000px;
-}
-
-.heart {
-    margin-bottom: 20px;
+.info-centr, .core {
     margin-left: auto;
     margin-right: auto;
 }
 
-.berry, .mango, .champagne, .blackbarry {
-    width: 490px;
-    height: 380px;
-    border-radius: 5px;
-    background-color: #f3f3f3;
-    display: inline-block;
-    margin: 10px 0px;
-    position: relative;
-}
-
-.mango, .blackbarry {
-    float: right;
-    margin-left: 10px;
-}
-
-.berry, .champagne {
-    float: left;
-    margin-right: 10px;
-}
-
-.order_berry, .order_mango, .order_champagne, .order_blackbarry {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    border-radius: 0px 0px 5px 5px;
-}
-
-.bttn {
-    color: white;
-    font-size: 18px;
-    width: 100%;
-    background-color: #4cccdb;
-    border-radius: 0px 0px 5px 5px;
-    border: 1px solid #4cccdb;
-    padding: 10px;
-}
-
-.buy {
-    background-color: #f3f3f3;
-}
-
-.sumt, .minus, .amount, .plus {
-    float: left;
-    font-size: 22px;
-}
-
-.sum {
-    color: #4cccdb;
-    padding: 10px;
-    font-size: 22px;
-    float: left;
-    padding: 20px 30px;
-}
-
-.minus {
-    padding: 10px;
-    float: left;
-    padding: 9px 30px 10px 30px;;
-}
-
-.amount {
-    padding: 20px 20px;
-}
-
-.plus {
-    padding: 9px 0 10px 30px;
-}
-
-.text {
-    font-size: 14px;
-    padding: 0px 30px;
-    color: #cccccc;
-    font-family: MuseoSansRounded-500-webfont;
-    line-height: 10px;
-}
-
-.travka {
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    border-radius: 5px;
-}
-
-.sativa, .THC, .indica {
-    font-size: 16px;
-    display: inline-block;
-    padding: 5px 15px;
-    margin: 10px 0px 10px 30px;
-    background: none;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 20px;
-}
-
-.sativa {
-    color: #ffde03;
-    border: 3px solid #ffde03;
-    cursor: pointer;
-}
-
-.indica {
-    color: #82abff;
-    border: 3px solid #82abff;
-    cursor: pointer;
-}
-
-.THC {
-    color: #ffffff;
-    border: 3px solid #ffffff;
-    margin: 10px 0px 10px 5px;
-}
-
-.topic {
-    color: white;
-    padding: 5px 15px;
-    margin: 5px 5px 5px 15px;
-}
-
-.bttn, .THC, .sativa {
-    cursor: pointer;
-}
-
-.bottom_div {
-    width: 100%;
-    height: 30px;
-    background-color: white;
-    border-radius: 0px 0px 5px 5px;
-}
-
-.button_mango {
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 5px;
-    padding: 10px 40px;
-    margin: 5px 5px 25px 30px;
-    cursor: pointer;
-}
-
-.button_mango_sum {
-    background-color: #ffffff;
-    color: #666666;
-}
-
-.button_mango_cart {
-    background-color: #4cccdb;
-    color: white;
-}
-
-.button_div {
-    background-color: black;
-    border-radius: 5px;
-}
-
-.clearfix {
-    clear: both;
-}
-
-.header::after, .heart::after, .buy::after {
+.info-centr::after {
     content: " ";
     clear: both;
     display: table;
+}
+
+.time {
+    font-family: MuseoSansRounded-500-webfont;
+    margin: 15px 0;
+    font-size: 20px;
+    color: #828282;
+    float: left;
+    padding: 10px 35px 10px 30px;
+    background: url(images/time.png) no-repeat left center; 
+}
+
+.return {
+    float: right;
+    font-family: MuseoSansRounded-500-webfont;
+    margin: 15px 0;
+    font-size: 20px;
+    color: #999999;
+    padding: 10px 0 10px 30px;
+    background: url(images/return.png) no-repeat left center;
+}
+
+.info-centr, .main, .core {
+    width: 1000px;
+}
+
+.core, .order {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+.addr, .pay  {
+    width: 500px;
+    padding: 30px 0 0 0;
+    float: left;
+}
+
+.input {
+    padding: 15px;
+    font-size: 20px;
+    font-family: MuseoSansRounded-100-webfont;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.pay {
+    padding: 30px;
+}
+
+.pay-text {
+    font-size: 20px;
+    font-family: MuseoSansRounded-500-webfont;
+    padding: 15px 0;
+    color: #828282;
+}
+
+.order {
+    background-color: white;
+
+}
+
+.line {
+    border: 1px solid #cccccc;
+}
+
+.order-berry, .order-champagne {
+    float: left;
+    padding: 25px 100px;
+    font-size: 18px;
+    font-family: MuseoSansRounded-300-webfont;
+    color: #666666;
+}
+
+.order-berry {
+    background: url(images/icon_berry.jpg) no-repeat left center;
+}
+
+.order-champagne {
+    background: url(images/icon_champagne.jpg) no-repeat left center;
 }
