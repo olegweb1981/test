@@ -6,94 +6,139 @@
     <link rel="icon" href="favicon.ico"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" href="style.css"> 
-    <script src="script.js" type="text/javascript"></script> 
+    <script src="script.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head> 
 <body>
-    <div class="header">
-        <div class="main">
-            <div class="logo">
-                <img src="images/eaze.jpg" alt="">
-            </div>
-            <div class="balance">
-                Free credit balance <b><span style="color: white">$10</span></b>
-            </div>
-            <div class="list">
-                <ul class="hr">
-                    <li>Profile</li>
-                    <li>Invite friends</li>
-                    <li>Enter promo code</li>
-                    <li>Help</li>
-                    <button class="log" type="logout">Log out</button>
-                </ul>
+    <header>
+        <div class="container visible-xs visible-sm">
+            <div class="row">
+                 <div class="col-md-6">
+                     <div class="c_visibl">
+                         Checkout
+                    </div>
+                 </div>   
             </div>
         </div>
-    </div>
-    <div class="info">
-        <div class="info-centr">
-            <div class="time">
-                ETA: = 17 min from order
-            </div>
-            <div class="return">
-                Continue shopping
+        <div class="container clearfix hidden-sm hidden-xs">
+            <div class="row">
+                 <div class="col-md-1">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <ul class="hr">
+                        <li class="hr_border">Free credit balance <b><span style="color: white">$10</span></b></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Invite friends</a></li>
+                        <li><a href="#">Enter promo code</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><button class="log" type="logout">Log out</button></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="heart">
-        <div class="core">
-            <div class="core">
-                <div class="addr">
-                    <h1>Address</h1>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="time">
+                        ETA: = 17 min from order
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="return">
+                        Continue shopping
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <heart>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="addr">
+                        <h1>Address</h1>
+                        <div>
+                            <form class="form-inline">
+                                <input style="width: 70%" type="text" name="address" placeholder="Street name, house number">
+                                <input style="width: 29%" type="text" name="address" placeholder="91119, SF"></p>
+                                <p><input style="width: 100%" type="text" name="note" placeholder="Special note (apt., floor, ...)"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pay">
+                        <h1>Payment</h1>
+                        <div class="pay-text">
+                            We accept cash only at his moment
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
                     <div>
-                        <form accesskey="путь/до/скрипта">
-                            <p><input style="width: 355px" class="input" type="text" name="address" placeholder="Street name, house number">
-                            <input style="width: 120px" class="input" type="text" name="address" placeholder="91119, SF"></p>
-                            <p><input style="width: 480px" class="input" type="text" name="note" placeholder="Special note (apt., floor, ...)"></p>
-                        </form>
+                        <h1>Your order</h1>
+                    </div>
+                    <div style="background-color: white">
+                        <div class="order clearfix">
+                            <div class="order-berry">
+                                <img src="images/icon_berry.jpg" alt="alt">
+                                <b>Berry White</b>, Sativa (THC: 15%, CBD: 18%)
+                            </div>
+                            <div class="item">
+                                <div class="item_close"></div>
+                                
+                                <div class="order-amount">
+                                    1/8 oz
+                                </div>
+                                <div class="order-sum">
+                                    <b>$50</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="line"></div>
+                    <div style="background-color: white">
+                        <div class="order">
+                            <div class="order-champagne">
+                                <img src="images/icon_champagne.jpg" alt="alt">
+                                <b>Champagne</b>, Sativa (THC: 12%, CBD: 18%)
+                            </div>
+                            <div class="item">
+                                <div class="item_close"></div>
+                                <div class="order-amount">
+                                    1/2 oz
+                                </div>
+                                <div class="order-sum">
+                                    <b>$150</b>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="pay">
-                    <h1>Payment</h1>
-                    <div class="pay-text">
-                        We accept cash only at his moment
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h1>Your order</h1>
-            </div>
-            <div style="background-color: white">
-                <div class="order">
-                    <div class="order-berry">
-                        <b>Berry White</b>, Sativa (THC: 15%, CBD: 18%)
-                    </div>
-                    <div class="order-amount">
-                        1/8 oz
-                    </div>
-                    <div class="order-sum">
-                        <b>$50</b>
-                    </div>
-                    <div class="close"></div>
-                </div>
-                <div class="line"></div>
-                <div class="order">
-                    <div class="order-champagne">
-                        <b>Champagne</b>, Sativa (THC: 12%, CBD: 18%)
-                    </div>
-                    <div class="order-amount">
-                        1/2 oz
-                    </div>
-                    <div class="order-sum">
-                        <b>$150</b>
-                    </div>
-                    <div class="close"></div>
-                </div>
-            </div>
-            <div class="price">
-                <h1>Your total price: $200</h1>
-                <p style="color: #666666;"><b>Free delivery,</b> all fees included! $5 free credit included!</p>
-                <p><button type="Delivery" class="delivery">Request delivery    -></button></p>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="price">
+                        <h1>Your total price: $200</h1>
+                        <p style="color: #666666;"><b>Free delivery,</b> all fees included! $5 free credit included!</p>
+                        <p><button type="Delivery" class="delivery">Request delivery    -></button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </heart>
 </body>
 </html>

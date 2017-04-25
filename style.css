@@ -38,91 +38,65 @@ body {
     background-color: #f3f3f3;
 }
 
-.header {
-    background-color: black;
+.c_visibl {
+    background-image: url(images/back.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px 0;
 }
 
-.main {
+header {
     background-color: black;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .logo {
-    display: inline-block;
+    float: left;
+    padding: 20px 0;
 }
-
-.balance {
-    color: gray;
-    font-size: 18px;
-    position: absolute;
-    border-right: 1px solid gray;
-    padding: 12px 40px;
-    margin: 20px;
-    display: inline-block;
-}
-
-.list {
-    float: right;
-    padding: 15px 0px 15px 15px;
-}
-
 ul.hr {
+    float: right;
     margin: 0;
-    padding: 4px 0px;
+    padding: 0;
 }
-
-ul.hr li {
-    font-size: 16px;
+ul.hr a {
     color: gray;
-    display: inline;
-    margin-right: 25px;
-    padding: 3px;
 }
-
-.log {
+ul.hr li {
+    padding: 10px;
+    margin: 0 10px;
+    display: inline-block;
     font-size: 16px;
+    list-style-type: none;
     color: #999999;
-    padding: 10px 20px;
-    margin-left: 20px;
-    background-color: transparent;
+}
+ul.hr li.hr_border {
+    border-right: 2px solid gray;
+    padding-right: 30px;
+}
+ul.hr li:last-of-type {
+    margin-right: 0;
+    padding-right: 0;
+}
+.log {
+    background-color: black;
     border-radius: 5px;
     border: 1px solid #999999;
-    cursor: pointer;
+    padding: 10px 20px;
 }
-
-.log:hover{
-    background-color:#222222;
-    border: 1px solid #BBBBBB;
-}
-
-.log:active {
-    background-color: initial;
-    border-color: initial;
-}
-
-.info {
+section {
     border-bottom: 1px solid #cccccc;
+    padding: 10px 0
 }
-
-.info-centr, .core {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.info-centr::after {
-    content: " ";
-    clear: both;
-    display: table;
-}
-
 .time {
     font-family: MuseoSansRounded-500-webfont;
     margin: 15px 0;
     font-size: 20px;
     color: #828282;
     float: left;
-    padding: 10px 35px 10px 30px;
+    padding-left: 35px;
     background: url(images/time.png) no-repeat left center; 
 }
 
@@ -132,27 +106,10 @@ ul.hr li {
     margin: 15px 0;
     font-size: 20px;
     color: #999999;
-    padding: 10px 0 10px 30px;
+    padding-left: 35px;
     background: url(images/return.png) no-repeat left center;
 }
-
-.info-centr, .main, .core {
-    width: 1000px;
-}
-
-.core, .order {
-    content: " ";
-    clear: both;
-    display: table;
-}
-
-.addr, .pay  {
-    width: 500px;
-    padding: 30px 0 0 0;
-    float: left;
-}
-
-.input {
+.form-inline input {
     padding: 15px;
     font-size: 20px;
     font-family: MuseoSansRounded-100-webfont;
@@ -161,7 +118,7 @@ ul.hr li {
 }
 
 .pay {
-    padding: 30px;
+    
 }
 
 .pay-text {
@@ -172,52 +129,37 @@ ul.hr li {
 }
 
 .order {
+    background-image: url(images/close.png);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
     background-color: white;
-
 }
 
 .line {
     border: 1px solid #cccccc;
 }
 
-.order-berry, .order-champagne, .order-amount, .order-sum {
-    width: 750px;
-    float: left;
-    padding: 25px 0 25px 100px;
+.order-berry, .order-champagne {
+    display: inline-block;
     font-size: 18px;
     font-family: MuseoSansRounded-300-webfont;
     color: #666666;
 }
-
-.order-berry {
-    background: url(images/icon_berry.jpg) no-repeat left center;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-
-.order-champagne {
-    background: url(images/icon_champagne.jpg) no-repeat left center;
+.item {
+    font-size: 18px;
+    font-family: MuseoSansRounded-300-webfont;
+    float: right;
+    padding-top: 18px;
 }
-
-.order-amount {
-    width: 100px;
-    display: inline-block;
-    margin: 0;
-    padding: 25px 0;
+.order-amount, .order-sum, .item_close {
+    float: right;
+    padding-right: 60px;
 }
-
-.order-sum {
-    width: 50px;
-    display: inline-block;
-    margin: 0;
-    padding: 25px 0;
-    text-align: right;
-}
-
-.close {
-    background: url(images/icon-close.png) no-repeat right center;
-    display: inline-block;
-    padding: 40px 35px 25px 35px;
-}
-
 .price {
     text-align: right;
     font-family: MuseoSansRounded-300-webfont;
@@ -231,5 +173,5 @@ ul.hr li {
     color: white;
     border-radius: 5px;
     border: 1px;
-    margin-top: 20px;
+    margin-top: 20px;   
 }
