@@ -117,7 +117,16 @@ section {
     border-radius: 5px;
     width: 100%;
 }
-
+.v_pay-text {
+    background-image: url(images/tick.png);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    font-size: 20px;
+    font-family: MuseoSansRounded-500-webfont;
+    padding: 15px;
+    color: #828282;
+    background-color: white;
+    }
 .pay-text {
     font-size: 20px;
     font-family: MuseoSansRounded-500-webfont;
@@ -197,6 +206,7 @@ section {
 }
 .v_price {
     text-align: center;
+    padding: 10px 0;
 }
 .price {
     text-align: right;
