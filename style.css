@@ -41,7 +41,7 @@ body {
 .c_visibl {
     background-image: url(images/back.png);
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: 15px center;
     color: white;
     text-align: center;
     font-size: 22px;
@@ -109,25 +109,60 @@ section {
     padding-left: 35px;
     background: url(images/return.png) no-repeat left center;
 }
-.form-inline input {
+.addr input {
     padding: 15px;
     font-size: 20px;
     font-family: MuseoSansRounded-100-webfont;
     border: 1px solid #cccccc;
     border-radius: 5px;
-}
-
-.pay {
-    
+    width: 100%;
 }
 
 .pay-text {
     font-size: 20px;
     font-family: MuseoSansRounded-500-webfont;
-    padding: 15px 0;
+    padding: 15px;
     color: #828282;
 }
 
+@media (max-width: 891px) {
+    h1 {
+        font-size: 20px;
+        margin: 0;
+        padding: 10px 15px;
+    }
+    .pay-text {
+        background-color: white;
+    }
+    .container {
+        padding: 0;
+    }
+    .row {
+        margin-right: 0;
+    }
+    .col-md-6, .col-md-9, .col-md-3, .col-md-12 {
+        padding-right: 0;
+    }
+}
+
+.v_order {
+    background-color: white;
+    padding: 5px 15px;
+}
+.v_order-berry {
+    font-size: 18px;
+    font-family: MuseoSansRounded-300-webfont;
+    color: #666666;
+    float: left;
+    left: 0;
+}
+.v_item {
+    font-size: 18px;
+    font-family: MuseoSansRounded-300-webfont;
+    float: right;
+    right: 0;
+    text-align: right;
+}
 .order {
     background-image: url(images/close.png);
     background-repeat: no-repeat;
@@ -153,21 +188,23 @@ section {
 .item {
     font-size: 18px;
     font-family: MuseoSansRounded-300-webfont;
-    float: right;
+    display: inline-block;
     padding-top: 18px;
 }
 .order-amount, .order-sum, .item_close {
     float: right;
     padding-right: 60px;
 }
+.v_price {
+    text-align: center;
+}
 .price {
     text-align: right;
     font-family: MuseoSansRounded-300-webfont;
 }
-
 .delivery {
     background-color: #4cccdb;
-    padding: 20px 100px;
+    padding: 20px 0;
     font-size: 22px;
     font-family: MuseoSansRounded-700-webfont;
     color: white;
